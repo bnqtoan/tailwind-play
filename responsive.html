@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <div class="text-white text-center text-2xl fixed top-0 w-full  transition-all
+            2xl:bg-red-600 xl:bg-yellow-600 lg:bg-green-600 md:bg-blue-600 sm:bg-indigo-600 bg-pink-600">
+        <div class="hidden 2xl:inline-block">2xl</div>
+        <div class="hidden xl:inline-block 2xl:hidden">xl</div>
+        <div class="hidden lg:inline-block xl:hidden">lg</div>
+        <div class="hidden md:inline-block lg:hidden">md</div>
+        <div class="hidden sm:inline-block md:hidden">sm</div>
+        <div class="sm:hidden">xs (under sm)</div>
+    </div>
+    <div class="container mt-12">
+        <div class="flex gap-4">
+            <div class="block sm:hidden bg-pink-600 w-32 h-32 text-white rounded-md shadow-lg">
+                <span class="flex items-center justify-between w-full h-full p-4">block sm:hidden</span>
+            </div>
+            <div class="sm:block hidden bg-indigo-600 w-32 h-32 text-white rounded-md shadow-lg">
+                <span class="flex items-center justify-between w-full h-full p-4">hidden sm:block</span>
+            </div>
+            <div class="md:block hidden bg-blue-600 w-32 h-32 text-white rounded-md shadow-lg">
+                <span class="flex items-center justify-between w-full h-full p-4">hidden md:block</span>
+            </div>
+            <div class="lg:block hidden bg-green-600 w-32 h-32 text-white rounded-md shadow-lg">
+                <span class="flex items-center justify-between w-full h-full p-4">hidden lg:block</span>
+            </div>
+            <div class="xl:block hidden bg-yellow-600 w-32 h-32 text-white rounded-md shadow-lg">
+                <span class="flex items-center justify-between w-full h-full p-4">hidden xl:block</span>
+            </div>
+            <div class="2xl:block hidden bg-red-600 w-32 h-32 text-white rounded-md shadow-lg">
+                <span class="flex items-center justify-between w-full h-full p-4">hidden 2xl:block</span>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
